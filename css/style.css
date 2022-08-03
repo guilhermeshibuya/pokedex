@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh; 
+}
+
+main{
+    display: inline-block; 
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+.pokedex{
+    width: 100%;
+    max-width: 850px;
+}
+
+.pokemon__img{
+    position: absolute;
+    bottom: 55%;
+    left: 35%;
+    transform: translate(-75%, 50%);
+    height: 17%;
+}
+
+.pokemon__data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 60%;
+    left: 25%;
+    font-size: clamp(8px, 2.2vw, 20px);
+    /* o clamp recebe tres parametros: clamp(min, desejável, max) */
+}
+
+.pokemon__name{
+    color: #3a444d;
+    text-transform: capitalize; /* Deixa a primeira letra maiúscula */
+}
+
+.pokedex-display{
+    position: absolute;
+    right: 17.5%;
+    top: 35%;
+    display: inline-block;
+    height: 25%;
+    width: 25%;
+    border-radius: 6%;
+    background-color: #222;
+    color: white;
+    padding: .3em .4em;
+}
+
+.pokemon__info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: clamp(8px, 1.5vw, 15px);
+    text-transform: capitalize;
+}
+
+.form{
+    position: absolute;
+    width: 29.5%;
+    top: 70%;
+    left: 17%;
+}
+
+.input__search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: .5em;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 2.5vw, .8rem);
+    box-shadow: -2px 2px 0 #888, -4px 5px 0 #333;
+    /* box-shadow: x y tamanho cor */
+}
+
+.buttons{
+    position: absolute;
+    bottom: 12%;
+    left: 35%;
+    width: 29.5%;
+    transform: translateX(-60%);
+    display: flex;
+    gap: 15px;
+    /* Espçamento entre os elemetos flex */
+}
+
+.button{
+    width: 50%;
+    padding: 2% 3%;
+    border: 2px solid black;
+    border-radius: .5em;
+    font-size: clamp(8px, 2.5vw, .8rem);
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 2px 0 #222, -3px 4px 0 black;
+}
+
+.button:active{
+    box-shadow: inset -2px 3px 0 #222;
+    /* Inset altera a sombra para dentro da moldura */
+    font-size: 0.7rem;
+}
+
+.button:hover{
+    cursor: pointer;
+}

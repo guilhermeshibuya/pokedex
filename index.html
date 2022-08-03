@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Links -->
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Main JS -->
+    <script defer src="./js/script.js"></script>
+    <!-- O atributo defer diz ao navegador para executar o script APENAS quando a análise do HTML estiver finalizada -->
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <img src="" alt="pokemon" class="pokemon__img">
+            
+        </div>
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
+        </h1>
+
+        <form class="form">
+            <input 
+                type="search" 
+                class="input__search"
+                placeholder="Name or Number"
+                required
+            >
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev">&lt; Prev</button>
+            <button class="button btn-shiny">Shiny!</button>
+            <button class="button btn-next">Next &gt;</button>
+        </div>
+
+        <div class="pokedex-display">
+            <div class="pokemon__info">
+                <span class="type__label">type: </span>
+                <span class="pokemon__type"></span>  
+            </div>
+            <div class="pokemon__info">
+                <span class="height__label">height: </span>
+                <span class="pokemon__height"></span>
+            </div>
+            <div class="pokemon__info">
+                <span class="weight__label">weight: </span>
+                <span class="pokemon__weight"></span>
+            </div>
+            <div class="pokemon__info">
+                <span class="atk__label">atk: </span>
+                <span class="pokemon__atk"></span>
+            </div>
+            <div class="pokemon__info">
+                <span class="hp__label">hp: </span>
+                <span class="pokemon__hp"></span>
+            </div>
+            <div class="pokemon__info">
+                <span class="def__label">def: </span>
+                <span class="pokemon__def"></span>
+            </div>
+        </div>
+        <img src="./images/pokedex22.png" alt="pokedex" class="pokedex">
+
+    </main>
+</body>
+</html>
