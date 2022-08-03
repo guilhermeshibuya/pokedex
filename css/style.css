@@ -152,6 +152,11 @@ main{
         border: 1px solid black;
         box-shadow: -1px 1px 0 #222, -2px 3px 0 black;
     }
+
+    .button:active{
+        box-shadow: inset -2px 2px 0 #222;
+        font-size: .3rem;
+    }
 }
 
 @media (max-width: 320px)
