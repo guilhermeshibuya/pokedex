@@ -65,7 +65,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    font-size: clamp(8px, 1.5vw, 15px);
+    font-size: clamp(6px, 1.5vw, 15px);
     text-transform: capitalize;
 }
 
@@ -84,7 +84,7 @@ main{
     border-radius: .5em;
     font-weight: 600;
     color: #3a444d;
-    font-size: clamp(8px, 2.5vw, .8rem);
+    font-size: clamp(6px, 1.5vw, .8rem);
     box-shadow: -2px 2px 0 #888, -4px 5px 0 #333;
     /* box-shadow: x y tamanho cor */
 }
@@ -105,7 +105,7 @@ main{
     padding: 2% 3%;
     border: 2px solid black;
     border-radius: .5em;
-    font-size: clamp(8px, 2.5vw, .8rem);
+    font-size: clamp(6px, 1.5vw, .8rem);
     color: white;
     background-color: #444;
     box-shadow: -2px 2px 0 #222, -3px 4px 0 black;
@@ -119,4 +119,36 @@ main{
 
 .button:hover{
     cursor: pointer;
+}
+
+@media (max-width: 720px){
+    body{
+        overflow: hidden;
+    }
+
+    .form{
+        width: 28.5%;
+        top: 66%;
+        left: 18.5%;
+    }
+
+    .input__search{
+        padding: 2%;
+        border: 1px solid #333;
+        box-shadow: -1px 1px 0 #888, -2px 3px 0 #333;
+    }
+
+    .buttons{
+        bottom: 15.5%;
+        left: 35.5%;
+        width: 28.5%;
+        transform: translateX(-60%);
+        gap: 8px;
+    }
+
+    .button{
+        padding: 2%;
+        border: 1px solid black;
+        box-shadow: -1px 1px 0 #222, -2px 3px 0 black;
+    }
 }
